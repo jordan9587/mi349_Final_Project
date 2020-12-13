@@ -1,4 +1,4 @@
-.main-menu, .responsive-menu ul, .social-member, .last-footer, .social-footer, .tags ul
+.list-pages, .responsive-menu ul, .info-social-media, .last-footer, .social-footer, .coding-tags ul
 {
     margin: 0;
     list-style: none;
@@ -41,7 +41,7 @@ h1, h2, h3, h4
   box-sizing: border-box;
 }
 
-#main-content, .full-width-slider 
+#list-copywrite, .full-width-slider 
 {
     width: 70%;
     height: 20%;
@@ -69,25 +69,25 @@ h1, h2, h3, h4
     font-size: 15px;
 }
 
-#about .section-title 
+#about-me .section-title 
 {
     border-color: #225e52;
 }
-#about h2 {
+#about-me h2 {
     background-color: #225e52;
 }
 
-#services .section-title {
+#expertise .section-title {
     border-color: #379683;
 }
-#services h2 {
+#expertise h2 {
     background-color: #379683;
 }
 
-#portfolio .section-title {
+#resume .section-title {
     border-color: #45bba3;
 }
-#portfolio h2 {
+#resume h2 {
     background-color: #45bba3;
 }
 
@@ -152,7 +152,7 @@ a.largeButton, input.largeButton
 }
 
 
-#main-sidebar 
+#nav-controls 
 {
     float: right;
     width: 25%;
@@ -161,37 +161,37 @@ a.largeButton, input.largeButton
     background-color: #05386B;
 }
 
-.logo 
+.title-nav 
 {
     padding: 20px 45px;
     margin: 95px 0;
     background-color: #379683;
 }
-.logo a
+.title-nav a
 {
     color: #05386B;
 }
-.logo a h1 
+.title-nav a h1 
 {
     text-transform: uppercase;
     font-size: 35px;
     font-weight: 700;
 }
-.logo span 
+.title-nav span 
 {
     font-size: 16px;
     color: #05386B;
 }
 
-.main-menu 
+.list-pages 
 {
     text-align: right;
 }
-.main-menu li 
+.list-pages li 
 {
     margin-bottom: 2px;
 }
-.main-menu li a 
+.list-pages li a 
 {
     border-left: 4px solid;
     padding: 15px 30px;
@@ -200,35 +200,35 @@ a.largeButton, input.largeButton
     display: block;
     background-color: #58c2ad;
 }
-.main-menu li a:hover 
+.list-pages li a:hover 
 {
     background-color: #965437;
 }
 
-li.about a 
+li.about-me a 
 {
     border-color: #225e52;
 }
-li.about a.active 
+li.about-me a.active 
 {
     color: #225e52;
 }
 
-li.services a 
+li.expertise a 
 {
     border-color: #379683;
 }
-li.services a.active 
+li.expertise a.active 
 {
     color: #379683;
 }
 
-li.portfolio a
+li.resume a
 {
     border-color: #5cdb95;
 }
 
-li.portfolio a.active 
+li.resume a.active 
 {
     color: #5cdb95;
 }
@@ -295,23 +295,23 @@ a.menu-toggle-btn i
     line-height: 2.0em;
 }
 
-.welcome-text 
+.intro-website 
 {
     padding: 50px;
     text-align: center;
 }
-.welcome-text a 
+.intro-website a 
 {
     color: #45bba3;
 }
-.welcome-text h2 
+.intro-website h2 
 {
     color: #05386B;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 350;
 }
-.welcome-text p 
+.intro-website p 
 {
     color: #edf5e1;
 }
@@ -328,7 +328,7 @@ a.menu-toggle-btn i
     transition: all 0.3s ease-in-out;
 }
 
-.member-thumb 
+.authour-intro 
 {
     width: 50%;
     height: auto;
@@ -336,7 +336,7 @@ a.menu-toggle-btn i
     position: relative;
 }
 
-.member-thumb img 
+.authour-intro img 
 {
     position: relative;
     display: block;
@@ -345,7 +345,7 @@ a.menu-toggle-btn i
   
 
 }
-.member-thumb .overlay 
+.authour-intro .overlay 
 {
     top: 0;
     position: absolute;
@@ -357,25 +357,25 @@ a.menu-toggle-btn i
     background-color: #111111;
 }
 
-.member-content 
+.authour-section 
 {
     margin-top: 12px;
     text-align: center;
     overflow: hidden;
 }
-.member-content h4 
+.authour-section h4 
 {
     font-size: 15px;
     text-transform: uppercase;
     color: #05386B;
 }
-.member-content p 
+.authour-section p 
 {
     color: #05386B;
     font-size: 10;
 }
 
-.social-member li 
+.info-social-media li 
 {
     display: inline;
     float: right;
@@ -385,13 +385,13 @@ a.menu-toggle-btn i
     background-color: #edf5e1;
     margin-right: 2px;
 }
-.social-member li a 
+.info-social-media li a 
 {
     line-height: 45px;
     display: block;
     color: #05386B;
 }
-.social-member li:hover 
+.info-social-media li:hover 
 {
     background-color: #965437;
 }
@@ -458,11 +458,11 @@ a.menu-toggle-btn i
   color: #05386B;
 }
 
-.contact-form 
+.contact-me 
 {
     margin-top: 60px;
 }
-.contact-form input, .contact-form textarea 
+.contact-me input, .contact-me textarea 
 {
     width: 100%;
     display: block;
@@ -470,23 +470,23 @@ a.menu-toggle-btn i
     padding: 10px 15px;
     outline: 0;
 }
-.contact-form input 
+.contact-me input 
 {
     height: 46px;
     margin-bottom: 30px;
 }
-.contact-form label 
+.contact-me label 
 {
     font-weight: normal;
 }
-.contact-form label.required:after 
+.contact-me label.required:after 
 {
     content: "*";
     color: #FF0000;
     margin-left: 7px;
 }
 
-.submit-btn 
+.enter-info-complete 
 {
     margin-top: 30px;
 }
@@ -514,17 +514,17 @@ a.menu-toggle-btn i
     color: #edf5e1;
 }
 
-.bottom-footer 
+.second-footer 
 {
     background-color: #05386B;
     color: #edf5e1;
     padding: 25px 7% 16px 7%;
 }
-.bottom-footer a 
+.second-footer a 
 {
     color: #edf5e1;
 }
-.bottom-footer .credits 
+.second-footer .credits 
 {
     text-align: center;
 }
@@ -544,7 +544,7 @@ a.menu-toggle-btn i
     vertical-align: middle;
 }
 
-#snackbar 
+#confirm-msg 
 {
     padding: 15px;
     visibility: hidden;
@@ -559,7 +559,7 @@ a.menu-toggle-btn i
     z-index: 1; 
 }
 
-#snackbar.show 
+#confirm-msg.show 
 {
     visibility: visible;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -624,7 +624,7 @@ a.menu-toggle-btn i
 
 @media (max-width: 990px) 
 {
-    #main-content 
+    #list-copywrite 
     {
         width: 100%;
     }
@@ -679,7 +679,7 @@ a.menu-toggle-btn i
     box-sizing:border-box
 }
 
-.slideshow-container 
+.image-slideshow 
 {
     max-width: 1000px;
     position: relative;
@@ -691,7 +691,7 @@ a.menu-toggle-btn i
     display: none;
 }
 
-.prev, .next 
+.previous-image, .next-image 
 {
     cursor: pointer;
     top: 60%;
@@ -707,13 +707,13 @@ a.menu-toggle-btn i
     font-size: 15px;
 }
 
-.next 
+.next-image 
 {
     right: 0;
     border-radius: 4px 0 0 4px;
 }
 
-.prev:hover, .next:hover 
+.previous-image:hover, .next-image:hover 
 {
     background-color: 05386B;
 }
@@ -729,7 +729,7 @@ a.menu-toggle-btn i
     position: absolute;
 }
 
-.numbertext 
+.index 
 {
     color: #d5dbe0;
     font-size: 12px;
@@ -788,13 +788,13 @@ a.menu-toggle-btn i
 }
 
 
-.tags ul li 
+.coding-tags ul li 
 {
     margin: 0 0.5em 0.5em 0;
     display: inline-block;
     padding: 0;
 }
-.tags ul li span 
+.coding-tags ul li span 
 {
     display: inline-block;
     height: 30px;
