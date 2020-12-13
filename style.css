@@ -4,6 +4,17 @@
     list-style: none;
     padding: 0;
 }
+.pdf-img
+{
+    max-width:20%;
+    height:auto;
+}
+.code-image
+{
+    max-width:50%;
+    height:auto;
+}
+
 body 
 {
     font: 15px "Times New Roman", Times, serif;
@@ -774,4 +785,31 @@ a.menu-toggle-btn i
     {
         opacity: 1
     }
+}
+
+
+.tags ul li 
+{
+    margin: 0 0.5em 0.5em 0;
+    display: inline-block;
+    padding: 0;
+}
+.tags ul li span 
+{
+    display: inline-block;
+    height: 30px;
+    text-overflow: ellipsis;
+    background-color: #d5dbe0;
+    border: 0.5px solid #ccc;
+    line-height: 30px;
+    padding: 0 1em;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-transition: 0.4s;
+    max-width: 120px;
+    transition: 0.4s;
+    overflow: hidden;
+    color: #05386B;
+    font-size: 12px;
 }
