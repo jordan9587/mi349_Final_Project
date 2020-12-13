@@ -1,0 +1,92 @@
+.main-menu, .responsive-menu ul, .social-member, .last-footer, .social-footer, .tags ul
+{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+body 
+{
+    font: 15px "Times New Roman", Times, serif;
+    color: #edf5e1;
+    font-weight: 250;
+    font-style: normal;
+}
+
+a, a:hover, a:focus 
+{
+    text-decoration: solid;
+    transition: all 150ms ease-in;
+}
+
+h1, h2, h3, h4
+{
+    font-family: "Georgia", Georgia, Arial, serif;
+}
+
+*, *:before, *:after 
+{
+  box-sizing: border-box;
+}
+
+#main-content, .full-width-slider 
+{
+    width: 70%;
+    height: 20%;
+    float: right;
+}
+
+.section-content 
+{
+    padding: 0 6%;
+    margin-bottom: 200px;
+}
+
+.section-title 
+{
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
+}
+.section-title h2 
+{
+    display: inline-block;
+    padding: 20px 50px;
+    color: #edf5e1;
+    text-transform: uppercase;
+    font-weight: 250;
+    font-size: 15px;
+}
+
+#about .section-title 
+{
+    border-color: #05386B;
+}
+#about h2 {
+    background-color: #05386B;
+}
+
+#services .section-title {
+    border-color: #379683;
+}
+#services h2 {
+    background-color: #379683;
+}
+
+#portfolio .section-title {
+    border-color: #5cdb95;
+}
+#portfolio h2 {
+    background-color: #5cdb95;
+}
+
+#contact .section-title {
+    border-color: #8ee4af;
+}
+#contact h2 {
+    background-color: #8ee4af;
+}
+
+#simple_link {
+    color: #05386B;
+}
+
