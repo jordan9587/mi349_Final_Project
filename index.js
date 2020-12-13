@@ -1,31 +1,42 @@
 //// Image Slides
-var slideIndex = 1;
-showSlides(slideIndex);
+var imageTally = 1;
+showSlides(imageTally);
 
-function plusSlides(n) 
+function currentSlide( a )
 {
-  showSlides(slideIndex += n);
+    showSlides(imageTally = a);
 }
 
-function currentSlide(n)
- {
-  showSlides(slideIndex = n);
+function plusSlides( a ) 
+{
+    showSlides(imageTally = imageTally + a);
 }
 
-function showSlides(n) 
+function showSlides( a ) 
 {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    var b = 0;
+
+    var images = document.getElementsByClassName("mySlides");
+
+    var progress_dots = document.getElementsByClassName("dot");
+
+    if (a < 1) 
+    {
+        imageTally = images.length
+    }
+    if (a > images.length)
+    {
+        imageTally = 1
+    }
+    for (b = 0; b < images.length; ++b) 
+    {
+        images[b].style.display = "none";
+    }
+    for (b = 0; b < progress_dots.length; b++) 
+    {
+        progress_dots[b].className = progress_dots[b].className.replace(" active", "");
+    }
+    images[imageTally-1].style.display = "block";
+    progress_dots[imageTally-1].className += " active";
 } 
 
