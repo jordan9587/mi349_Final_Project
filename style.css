@@ -1,14 +1,16 @@
-.list-pages, .responsive-menu ul, .info-social-media, .last-footer, .social-footer, .coding-tags ul
+.list-pages, .responsive-menu ul, .social-footer, .coding-tags ul, .info-social-media, .last-footer
 {
     margin: 0;
     list-style: none;
     padding: 0;
 }
+
 .pdf-img
 {
     max-width:20%;
     height:auto;
 }
+
 .code-image
 {
     max-width:50%;
@@ -24,19 +26,19 @@ body
     font-style: normal;
 }
 
-a, a:hover, a:focus 
+a:hover, a:focus, a
 {
     text-decoration: solid;
     transition: all 150ms ease-in;
 }
 
-h1, h2, h3, h4
+h4, h3, h2, h1
 {
     font-family: "Georgia", Georgia, Arial, serif;
     color: #05386B;
 }
 
-*, *:before, *:after 
+*:after, *, *:before
 {
   box-sizing: border-box;
 }
@@ -73,36 +75,45 @@ h1, h2, h3, h4
 {
     border-color: #225e52;
 }
-#about-me h2 {
+#about-me h2 
+{
     background-color: #225e52;
 }
 
-#expertise .section-title {
+#expertise .section-title 
+{
     border-color: #379683;
 }
-#expertise h2 {
+
+#expertise h2 
+{
     background-color: #379683;
 }
 
-#resume .section-title {
+#resume .section-title 
+{
     border-color: #45bba3;
 }
-#resume h2 {
+
+#resume h2 
+{
     background-color: #45bba3;
 }
 
-#contact .section-title {
+#contact .section-title 
+{
     border-color: #8ee4af;
 }
-#contact h2 {
+
+#contact h2 
+{
     background-color: #8ee4af;
 }
 
-#simple_link {
+#link_social, #link_social_2
+{
     color: #edf5e1;
 }
-
-
 
 #resume-link 
 {
@@ -121,17 +132,19 @@ h1, h2, h3, h4
     text-decoration: none;
     border-bottom: 3px solid #8ee4af;
 }
+
 #mail-link 
 {
     color: #05386B;
 }
+
 #mail-link:hover 
 {
     background: #965437;
     color: #05386B;
 }
 
-a.largeButton, input.largeButton 
+input.largeButton, a.largeButton
 {
     color: #05386B;
     font-size: 15px;
@@ -146,11 +159,11 @@ a.largeButton, input.largeButton
 {
     background: #8ee4af;
 }
+
 .contactBgColor:hover 
 {
   background-color: #965437;
 }
-
 
 #nav-controls 
 {
@@ -167,16 +180,19 @@ a.largeButton, input.largeButton
     margin: 95px 0;
     background-color: #379683;
 }
+
 .title-nav a
 {
     color: #05386B;
 }
+
 .title-nav a h1 
 {
     text-transform: uppercase;
     font-size: 35px;
     font-weight: 700;
 }
+
 .title-nav span 
 {
     font-size: 16px;
@@ -187,10 +203,12 @@ a.largeButton, input.largeButton
 {
     text-align: right;
 }
+
 .list-pages li 
 {
     margin-bottom: 2px;
 }
+
 .list-pages li a 
 {
     border-left: 4px solid;
@@ -200,6 +218,7 @@ a.largeButton, input.largeButton
     display: block;
     background-color: #58c2ad;
 }
+
 .list-pages li a:hover 
 {
     background-color: #965437;
@@ -209,6 +228,7 @@ li.about-me a
 {
     border-color: #225e52;
 }
+
 li.about-me a.active 
 {
     color: #225e52;
@@ -218,6 +238,7 @@ li.expertise a
 {
     border-color: #379683;
 }
+
 li.expertise a.active 
 {
     color: #379683;
@@ -237,6 +258,7 @@ li.contact a
 {
     border-color: #8ee4af;
 }
+
 li.contact a.active 
 {
     color: #8ee4af;
@@ -252,6 +274,7 @@ a.menu-toggle-btn
     height: 62px;
     text-align: center;
 }
+
 a.menu-toggle-btn i 
 {
     line-height: 62px;
@@ -278,6 +301,7 @@ a.menu-toggle-btn i
     color: #05386B;
     top: 210px;
 }
+
 .slider-caption h2 
 {
     font-size: 40px;
@@ -285,6 +309,7 @@ a.menu-toggle-btn i
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 .slider-caption p 
 {
     font-size: 15px;
@@ -300,10 +325,12 @@ a.menu-toggle-btn i
     padding: 50px;
     text-align: center;
 }
+
 .intro-website a 
 {
     color: #45bba3;
 }
+
 .intro-website h2 
 {
     color: #05386B;
@@ -311,6 +338,7 @@ a.menu-toggle-btn i
     font-size: 30px;
     font-weight: 350;
 }
+
 .intro-website p 
 {
     color: #edf5e1;
@@ -321,6 +349,7 @@ a.menu-toggle-btn i
     height: auto;
     overflow: hidden;
 }
+
 .member-item:hover .overlay 
 {
     visibility: visible;
@@ -345,6 +374,7 @@ a.menu-toggle-btn i
   
 
 }
+
 .authour-intro .overlay 
 {
     top: 0;
@@ -363,12 +393,14 @@ a.menu-toggle-btn i
     text-align: center;
     overflow: hidden;
 }
+
 .authour-section h4 
 {
     font-size: 15px;
     text-transform: uppercase;
     color: #05386B;
 }
+
 .authour-section p 
 {
     color: #05386B;
@@ -391,6 +423,7 @@ a.menu-toggle-btn i
     display: block;
     color: #05386B;
 }
+
 .info-social-media li:hover 
 {
     background-color: #965437;
@@ -400,6 +433,7 @@ a.menu-toggle-btn i
 {
     margin-top: 80px;
 }
+
 .our-story h3 
 {
     font-size: 20px;
@@ -413,6 +447,7 @@ a.menu-toggle-btn i
 {
     margin-top: 30px;
 }
+
 .story-image img 
 {
   width: 100%;
@@ -424,6 +459,7 @@ a.menu-toggle-btn i
     background-color: #379683;
     color: #05386B;
 }
+
 .service-item .service-icon 
 {
     width: 25%;
@@ -433,12 +469,14 @@ a.menu-toggle-btn i
     margin-top: 32px;
     height: 90%;
 }
+
 .service-item .service-content 
 {
     width: 70%;
     padding: 22px 22px 22px 0;
     text-align: center;
 }
+
 .service-item .service-content h3 
 {
     margin: 0;
@@ -449,6 +487,7 @@ a.menu-toggle-btn i
 {
     margin-top: 85px;
 }
+
 .our-skills h3 
 {
   font-weight: 350;
@@ -462,6 +501,7 @@ a.menu-toggle-btn i
 {
     margin-top: 60px;
 }
+
 .contact-me input, .contact-me textarea 
 {
     width: 100%;
@@ -470,6 +510,7 @@ a.menu-toggle-btn i
     padding: 10px 15px;
     outline: 0;
 }
+
 .contact-me input 
 {
     height: 46px;
@@ -479,6 +520,7 @@ a.menu-toggle-btn i
 {
     font-weight: normal;
 }
+
 .contact-me label.required:after 
 {
     content: "*";
@@ -496,13 +538,13 @@ a.menu-toggle-btn i
   background-color: #05386B;
   padding: 50px;
   text-align: center;
-
 }
 
 .first-footer .social-footer ul li 
 {
     display: inline;
 }
+
 .first-footer .social-footer ul li a 
 {
     width: auto;
@@ -520,6 +562,7 @@ a.menu-toggle-btn i
     color: #edf5e1;
     padding: 25px 7% 16px 7%;
 }
+
 .second-footer a 
 {
     color: #edf5e1;
@@ -713,7 +756,7 @@ a.menu-toggle-btn i
     border-radius: 4px 0 0 4px;
 }
 
-.previous-image:hover, .next-image:hover 
+.next-image:hover, .previous-image:hover
 {
     background-color: 05386B;
 }
@@ -750,7 +793,7 @@ a.menu-toggle-btn i
     border-radius: 60%;
 }
 
-.active, .dot:hover 
+.dot:hover, .active
 {
     background-color: #ccc;
 }
@@ -787,13 +830,13 @@ a.menu-toggle-btn i
     }
 }
 
-
 .coding-tags ul li 
 {
     margin: 0 0.5em 0.5em 0;
     display: inline-block;
     padding: 0;
 }
+
 .coding-tags ul li span 
 {
     display: inline-block;

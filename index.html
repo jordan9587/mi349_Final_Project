@@ -31,12 +31,12 @@
             <div class="image-slideshow">
                 <div class="mySlides info-social-mediade">
                   <div class="index">1 / 2</div>
-                  <img src="source/sydney.jpg" style="width:100%">
+                  <img src="source/sydney.jpg" alt="A picture of Sydney, Australia." style="width:100%">
                   <div class="text">Hometown</div>
                 </div>
                 <div class="mySlides fade">
                   <div class="index">2 / 2</div>
-                  <img src="source/australia.jpg" style="width:100%">
+                  <img src="source/australia.jpg" alt="A picture of a Koala." style="width:100%">
                   <div class="text"></div>
                 </div>
                 <!-- next-image and previous-image buttons -->
@@ -45,8 +45,8 @@
               </div>
               <!-- Dots -->
               <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
+                <span onclick="currentSlide(1)" class="dot"></span>
+                <span onclick="currentSlide(2)" class="dot"></span>
               </div>
             <!--Top image slider end-->
             <!--Intro Text start-->
@@ -66,7 +66,7 @@
     
 		<div class="subset-content">
             <!--about-me Me start-->
-			<div id="about-me" class="section-content">
+			<div class="section-content" id="about-me">
 				<div class="row">
 					<div class="section-one">
 						<div class="section-title">
@@ -78,17 +78,17 @@
 					<div class="section-two">
 						<div class="member-item">
 							<div class="authour-intro">
-								<img src="source/me.png" alt="Picture of Jordan Hybki">
+								<img alt="Picture of Jordan Hybki." src="source/me.png">
 								<div class="overlay">
 									<ul class="info-social-media">
-                                        <li><a href="https://twitter.com/JHybki" class="current current-twitter"><img src="source/twitter.png" width="20px" height="18px"></a></li>
-                                        <li><a href="https://github.com/jordan9587" class="current current-github"><img src="source/github.png" width="20px" height="18px"></a></li>
-                                        <li><a href="https://devpost.com/hybkijor" class="current"><img src="source/devpost.png" width="20px" height="18px"></a></li>
+                                        <li><a class="current current-twitter" href="https://twitter.com/JHybki"><img src="source/twitter.png" width="20" height="18" alt="Image of Twitter Logo."></a></li>
+                                        <li><a class="current current-github" href="https://github.com/jordan9587" ><img src="source/github.png" width="20" height="18" alt="Image of Github Logo."></a></li>
+                                        <li><a href="https://devpost.com/hybkijor" class="current"><img src="source/devpost.png" width="20" height="18" alt="Image of Devpost Logo."></a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="authour-section">
-								<h4>I'm on <a href="https://twitter.com/JHybki" id="simple_link">Twitter</a> and <a href="https://github.com/jordan9587" id="simple_link">Github</a>!</h4>
+								<h4>I'm on <a href="https://twitter.com/JHybki" id="link_social">Twitter</a> and <a id="link_social_2" href="https://github.com/jordan9587">Github</a>!</h4>
 								<p>Visit these links!</p>
 							</div>
 						</div>
@@ -107,7 +107,7 @@
 					</div>
 					<div class="section-two">
 						<div class="story-image">
-							<img src="source/code.jpg" alt="Picture of Code" class="code-image">
+							<img src="source/code.jpg" class="code-image" alt="Picture of Code">
 						</div>
 					</div>
 				</div>
@@ -151,7 +151,7 @@
                         <h4>Video Game Programmer</h4>
                         <p>Programmer within a team on a two-day Game Jam, Spring 2017 (Theme: D List Superheroes, Engine: Unity3D), Autumn 2018 (Theme: Card Game, Engine: Unity3D). Programmer within a team on a four-week Prespec group Video game project, Spring 2018 (Theme: Lost in Space, Engine: Unity3D).</p>
 
-                        </p><h4>Classes Taken</h4>
+                        <h4>Classes Taken</h4>
                         <div class="college_classes"></div>
                             <ul>
                                 <li><a href="https://schedule.msu.edu/CourseDesc.aspx?SubjectCode=CSE&CourseNumber=435">CSE 435: Software Engineering</a></li>
@@ -205,8 +205,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="section-one" id="resume-link">
-						<a id="resume-anchor" href="https://drive.google.com/file/d/1RvPU89GhrhdoWED3kEBszOlov6AIuslk/view?usp=sharing"><img src="source/pdf.png" class="pdf-img"><span>Resume</span></a>
+					<div id="resume-link" class="section-one">
+						<a id="resume-anchor" href="https://drive.google.com/file/d/1RvPU89GhrhdoWED3kEBszOlov6AIuslk/view?usp=sharing"><img alt="Image of PDF logo." src="source/pdf.png" class="pdf-img"><span>Resume</span></a>
 					</div>
 				</div>
             </div> 
@@ -225,19 +225,19 @@
 				<div class="row contact-me">
 					<div class="section-two">
 						<label for="name" class="required">Name:</label>
-						<input name="name" type="text" id="name" maxlength="50">
+						<input name="name" maxlength="50" type="text" id="name" >
 					</div>
 					<div class="section-two">
 						<label for="email" class="required">Email:</label>
-						<input name="email" type="text" id="email" maxlength="50">
+						<input name="email" maxlength="50" type="text" id="email">
 					</div>
 					<div class="section-two">
 						<label for="subject">Subject:</label>
-						<input name="subject" type="text" id="subject" maxlength="50">
+						<input name="subject" maxlength="50" type="text" id="subject" >
 					</div>
 					<div class="section-one">
 						<label for="message" class="required">Message:</label>
-						<textarea name="message" id="message" rows="7"></textarea>
+						<textarea id="message" name="message" rows="7"></textarea>
 					</div> 
 
 					<div class="section-one">
@@ -260,8 +260,8 @@
 						<div class="section-one">
 							<div class="social-footer">
 								<ul>
-                                    <li><a href="https://twitter.com/JHybki" class="current current-twitter"><img src="source/twitter.png" width="60px" height="50px"></a></li>
-                                    <li><a href="https://github.com/jordan9587" class="current current-github"><img src="source/github.png" width="60px" height="50px"></a></li>
+                                    <li><a class="current current-twitter" href="https://twitter.com/JHybki"><img src="source/twitter.png" width="60" alt="Logo of Twitter image." height="50"></a></li>
+                                    <li><a class="current current-github" href="https://github.com/jordan9587"><img src="source/github.png" width="60" alt="Logo of Github image." height="50"></a></li>
 								</ul>
 							</div>
 						</div>
