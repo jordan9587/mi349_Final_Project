@@ -11,10 +11,55 @@
     height:auto;
 }
 
-.code-image
+@media only screen and (max-width: 600px) 
 {
-    max-width:50%;
-    height:auto;
+    #resume-anchor span 
+    {
+        font-size: 40px;
+    }
+}
+@media (max-width: 581px) 
+{
+    .slider-caption h2 
+    {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 1.3em;
+        vertical-align: top;
+    }
+}
+
+@media (max-width: 990px) 
+{
+    #list-copywrite 
+    {
+        width: 100%;
+    }
+    .first-footer 
+    {
+        border-left: 0;
+    }
+    .flexslider .slides, .flexslider, .main-slider 
+    {
+        height: auto;
+    }
+    .service-item 
+    {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 760px) 
+{
+    .slider-caption 
+    {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slider-caption a, .slider-caption p 
+    {
+        top: 50px !important;
+        display: none;
+    }
 }
 
 body 
@@ -22,26 +67,10 @@ body
     font: 15px "Times New Roman", Times, serif;
     color: #edf5e1;
     background-color: #5cdb95;
-    font-weight: 250;
+    font-weight: 100;
     font-style: normal;
 }
 
-a:hover, a:focus, a
-{
-    text-decoration: solid;
-    transition: all 150ms ease-in;
-}
-
-h4, h3, h2, h1
-{
-    font-family: "Georgia", Georgia, Arial, serif;
-    color: #05386B;
-}
-
-*:after, *, *:before
-{
-  box-sizing: border-box;
-}
 
 #list-copywrite, .full-width-slider 
 {
@@ -50,25 +79,32 @@ h4, h3, h2, h1
     float: right;
 }
 
+.code-image
+{
+    max-width:50%;
+    height:auto;
+}
+
 .section-content 
 {
     padding: 0 6%;
     margin-bottom: 200px;
 }
 
-.section-title 
-{
-    border-bottom: 6px solid;
-    margin-bottom: 50px;
-}
 .section-title h2 
 {
     display: inline-block;
     padding: 20px 50px;
     color: #05386B;
     text-transform: uppercase;
-    font-weight: 250;
+    font-weight: 100;
     font-size: 15px;
+}
+
+.section-title 
+{
+    border-bottom: 6px solid;
+    margin-bottom: 50px;
 }
 
 #about-me .section-title 
@@ -80,16 +116,6 @@ h4, h3, h2, h1
     background-color: #225e52;
 }
 
-#expertise .section-title 
-{
-    border-color: #379683;
-}
-
-#expertise h2 
-{
-    background-color: #379683;
-}
-
 #resume .section-title 
 {
     border-color: #45bba3;
@@ -98,6 +124,16 @@ h4, h3, h2, h1
 #resume h2 
 {
     background-color: #45bba3;
+}
+
+#expertise .section-title 
+{
+    border-color: #379683;
+}
+
+#expertise h2 
+{
+    background-color: #379683;
 }
 
 #contact .section-title 
@@ -122,28 +158,6 @@ h4, h3, h2, h1
     padding-bottom: 0;
 }
 
-#mail-link 
-{
-    background: #8ee4af;
-    text-align: center;
-    font-size: 1.5em;
-    transition: all 0.5s;
-    padding: 8px;
-    text-decoration: none;
-    border-bottom: 3px solid #8ee4af;
-}
-
-#mail-link 
-{
-    color: #05386B;
-}
-
-#mail-link:hover 
-{
-    background: #965437;
-    color: #05386B;
-}
-
 input.largeButton, a.largeButton
 {
     color: #05386B;
@@ -153,16 +167,6 @@ input.largeButton, a.largeButton
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 4px solid;
-}
-
-.contactBgColor 
-{
-    background: #8ee4af;
-}
-
-.contactBgColor:hover 
-{
-  background-color: #965437;
 }
 
 #nav-controls 
@@ -209,6 +213,33 @@ input.largeButton, a.largeButton
     margin-bottom: 2px;
 }
 
+.contactBgColor 
+{
+    background: #8ee4af;
+}
+
+.contactBgColor:hover 
+{
+  background-color: #965437;
+}
+
+a:hover, a:focus, a
+{
+    text-decoration: solid;
+    transition: all 150ms ease-in;
+}
+
+h4, h3, h2, h1
+{
+    font-family: "Georgia", Georgia, Arial, serif;
+    color: #05386B;
+}
+
+*:after, *, *:before
+{
+  box-sizing: border-box;
+}
+
 .list-pages li a 
 {
     border-left: 4px solid;
@@ -229,15 +260,6 @@ li.about-me a
     border-color: #225e52;
 }
 
-li.about-me a.active 
-{
-    color: #225e52;
-}
-
-li.expertise a 
-{
-    border-color: #379683;
-}
 
 li.expertise a.active 
 {
@@ -249,9 +271,36 @@ li.resume a
     border-color: #5cdb95;
 }
 
+li.about-me a.active 
+{
+    color: #225e52;
+}
+
+li.expertise a 
+{
+    border-color: #379683;
+}
+
 li.resume a.active 
 {
     color: #5cdb95;
+}
+
+.contact-me input 
+{
+    height: 46px;
+    margin-bottom: 30px;
+}
+.contact-me label 
+{
+    font-weight: normal;
+}
+
+.contact-me label.required:after 
+{
+    content: "*";
+    color: #FF0000;
+    margin-left: 7px;
 }
 
 li.contact a 
@@ -296,7 +345,7 @@ a.menu-toggle-btn i
     position: absolute;
     width: 90%;
     text-align: center;
-    height: 100;
+    height: 100px;
     z-index: 7;
     color: #05386B;
     top: 210px;
@@ -336,7 +385,7 @@ a.menu-toggle-btn i
     color: #05386B;
     text-transform: uppercase;
     font-size: 30px;
-    font-weight: 350;
+    font-weight: 200;
 }
 
 .intro-website p 
@@ -357,6 +406,7 @@ a.menu-toggle-btn i
     transition: all 0.3s ease-in-out;
 }
 
+
 .authour-intro 
 {
     width: 50%;
@@ -371,8 +421,6 @@ a.menu-toggle-btn i
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
-
 }
 
 .authour-intro .overlay 
@@ -387,13 +435,6 @@ a.menu-toggle-btn i
     background-color: #111111;
 }
 
-.authour-section 
-{
-    margin-top: 12px;
-    text-align: center;
-    overflow: hidden;
-}
-
 .authour-section h4 
 {
     font-size: 15px;
@@ -404,8 +445,16 @@ a.menu-toggle-btn i
 .authour-section p 
 {
     color: #05386B;
-    font-size: 10;
+    font-size: 10px;
 }
+
+.authour-section 
+{
+    margin-top: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
 
 .info-social-media li 
 {
@@ -439,7 +488,7 @@ a.menu-toggle-btn i
     font-size: 20px;
     margin: 0 0 22px 0;
     color: #05386B;
-    font-weight: 320;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
@@ -481,51 +530,6 @@ a.menu-toggle-btn i
 {
     margin: 0;
     font-size: 25px;
-}
-
-.our-skills 
-{
-    margin-top: 85px;
-}
-
-.our-skills h3 
-{
-  font-weight: 350;
-  margin: 0 0 20px 0;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #05386B;
-}
-
-.contact-me 
-{
-    margin-top: 60px;
-}
-
-.contact-me input, .contact-me textarea 
-{
-    width: 100%;
-    display: block;
-    border: 1px solid #d5dbe0;
-    padding: 10px 15px;
-    outline: 0;
-}
-
-.contact-me input 
-{
-    height: 46px;
-    margin-bottom: 30px;
-}
-.contact-me label 
-{
-    font-weight: normal;
-}
-
-.contact-me label.required:after 
-{
-    content: "*";
-    color: #FF0000;
-    margin-left: 7px;
 }
 
 .enter-info-complete 
@@ -606,115 +610,6 @@ a.menu-toggle-btn i
 {
     visibility: visible;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein 
-{
-    from 
-    {
-        bottom: 0;
-        opacity: 0;
-    }
-    to 
-    {
-        bottom: 40px;
-        opacity: 1;
-    }
-}
-
-@keyframes fadein 
-{
-    from 
-    {
-        bottom: 0;
-        opacity: 0;
-    }
-    to 
-    {
-        bottom: 40px;
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeout 
-{
-    from 
-    {
-        bottom: 40px;
-        opacity: 1;
-    }
-    to 
-    {
-        bottom: 0;
-        opacity: 0;
-    }
-}
-
-@keyframes fadeout 
-{
-    from 
-    {
-        bottom: 30px;
-        opacity: 1;
-    }
-    to 
-    {
-        bottom: 0;
-        opacity: 0;
-    }
-}
-
-@media (max-width: 990px) 
-{
-    #list-copywrite 
-    {
-        width: 100%;
-    }
-    .first-footer 
-    {
-        border-left: 0;
-    }
-    .flexslider .slides, .flexslider, .main-slider 
-    {
-        height: auto;
-    }
-    .service-item 
-    {
-        margin-bottom: 30px;
-    }
-}
-@media (max-width: 760px) 
-{
-    .slider-caption 
-    {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-    .slider-caption a, .slider-caption p 
-    {
-        top: 50px !important;
-        display: none;
-    }
-}
-@media only screen and (max-width: 600px) 
-{
-    #resume-anchor span 
-    {
-        font-size: 40px;
-    }
-}
-@media (max-width: 581px) 
-{
-    .slider-caption h2 
-    {
-        padding-top: 0;
-        margin-top: 0;
-        font-size: 1.3em;
-        vertical-align: top;
-    }
 }
 
 * 
@@ -734,6 +629,12 @@ a.menu-toggle-btn i
     display: none;
 }
 
+.next-image 
+{
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
 .previous-image, .next-image 
 {
     cursor: pointer;
@@ -750,15 +651,9 @@ a.menu-toggle-btn i
     font-size: 15px;
 }
 
-.next-image 
-{
-    right: 0;
-    border-radius: 4px 0 0 4px;
-}
-
 .next-image:hover, .previous-image:hover
 {
-    background-color: 05386B;
+    background-color: #05386B;
 }
 
 .text 
@@ -801,21 +696,7 @@ a.menu-toggle-btn i
 .fade 
 {
     animation-name: fade;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-name: fade;
     animation-duration: 2s;
-}
-
-@-webkit-keyframes fade 
-{
-    from 
-    {
-        opacity: .5
-    }
-    to 
-    {
-        opacity: 1
-    }
 }
 
 @keyframes fade 
@@ -849,10 +730,38 @@ a.menu-toggle-btn i
     border-radius: 4px;
     white-space: nowrap;
     text-decoration: none;
-    -webkit-transition: 0.4s;
     max-width: 120px;
     transition: 0.4s;
     overflow: hidden;
     color: #05386B;
     font-size: 12px;
 }
+
+.our-skills 
+{
+    margin-top: 85px;
+}
+
+.our-skills h3 
+{
+  font-weight: 200;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #05386B;
+}
+
+.contact-me 
+{
+    margin-top: 60px;
+}
+
+.contact-me input, .contact-me textarea 
+{
+    width: 100%;
+    display: block;
+    border: 1px solid #d5dbe0;
+    padding: 10px 15px;
+    outline: 0;
+}
+
